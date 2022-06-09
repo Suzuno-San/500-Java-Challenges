@@ -1,0 +1,59 @@
+DataStructure <ArrayList>
+	- Arrays.asList(...) เพื่อ convert ค่าของ array ไปเป็น List
+		Ex.	ArrayList<Integer> arr = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5)		
+			//[1, 2, 3 , 4, 5] 
+
+	- ตัวแปร.get(index) เพื่อดึง index ที่ n ใน ArrayList
+		Ex.	ArrayList<String> arr = ["cat", "dog", "cow", "duck"]
+			arr.get(2)				//dog (ที่เป็น StringตามArrayList)
+
+	- ตัวแปร.size() เพื่อดูขนาดของ ArrayList
+		Ex.	ArrayList<String> arr = ["cat", "dog", "cow", "duck"]
+			arr.size()				//4 (ที่เป็น Integer)
+
+	- ตัวแปร.subList(index,index) เพื่อดู index ของ ArrayList ตั้งแต่ n ถึง n-1
+		Ex.	ArrayList<String> arr = ["cat", "dog", "cow", "duck"]
+			arr.subList(1,3)		//["dog", "cow"] (ตั้งแต่ 1(dog) ถึง 3-1(cow))
+
+	- ตัวแปร.set(index,newValue) เพื่อเปลี่ยนค่าสมาชิกใน index ที่ n
+		Ex.	ArrayList<String> arr = ["cat", "dog", "cow", "duck"]
+			arr.set(0,"bird")		//["brid", "dog", "cow", "duck"] (จาก cat ที่อยู่ index ที่ 0 ไปเป็น brid)
+
+	- ตัวแปร.add(index,value) เพื่อเพิ่มค่าไปเป็นสมาชิกของ ArrayList ตาม index ที่กำหนด
+		Ex1.	ArrayList<String> arr = ["cat", "dog", "cow", "duck"]
+			arr.add("ape")		//["cat", "dog", "cow", "duck","ape"] (เพิ่ม ape ไว้หลังสุดใน ArrayList)
+		Ex2.	ArrayList<String> arr = ["cat", "dog", "cow", "duck"]
+			arr.add(2,"own")		//["cat", "dog", "own", "cow", "duck"] (เพิ่ม own ใน index ที่ 2 ของArrayList)
+
+	- Collections.sort(ตัวแปร) เพื่อเรียงลำดับใน ArrayList จากน้อยไปมาก
+		Ex.	ArrayList<Integer> arr = [0, 4, 2, 3, 1];
+			Collections.sort(arr);		//[0, 1, 2, 3, 4] (น้อยไปมาก)
+
+	- Collections.sort(ตัวแปร,Collections.reverseOrder()); เพื่อเรียงลำดับใน ArrayList จากมากไปน้อย
+		Ex.	ArrayList<Integer> arr = [0, 4, 2, 3, 1];
+			Collections.sort(arr,Collections.reverseOrder());		//[4, 3, 2, 1, 0] (มากไปน้อย)
+
+	- ตัวแปร1.addAll(ตัวแปร2) เพื่อนำสมาชิกของ array2 ไปเพิ่มใน array1
+		Ex.	ArrayList<Integer> arr1 = [0, 1, 2];
+			ArrayList<Integer> arr2 = [3, 4, 5];
+			arr1.addAll(arr2);			//[0, 1, 2, 3, 4, 5] (สมาชิกของ array2 ได้ไปเพิ่มใน array1)
+
+	- ตัวแปร.remove(indexหรือboolean) เพื่อลบสมาชิกใน ArrayList ตาม index ที่กำหนด
+		Ex.	ArrayList<Integer> arr = [1, 2, 3, 4, 5];
+			arr.remove(2);		//[1,2,4,5] (ลบค่าใน index ที่ 2)
+		Ex.	ArrayList<Integer> arr = [1, 2, 3, 4, 5];
+			arr.remove(Integer.valueOf(3));			//[1, 2, 4, 5] (ลบค่าที่เป็น 3 ตัวแรกของArrayList)
+
+	- ตัวแปร1.removeAll(ตัวแปร2) เพื่อลบสมาชิกใน ArrayList1 ทั้งหมดที่มีใน ArrayList2
+		Ex.	ArrayList<Integer> arr1 = [1, 1, 2, 2, 3, 3];
+			ArrayList<Integer> arr2 = [2];
+			arr1.removeAll(arr2) 		//[1, 1, 3, 3] (ลบ 2 ทั้งหมดใน arr1)
+
+	- ตัวแปร.clear() เพื่อลบสมาชิกทั้งหมดในArrayList
+		Ex.	ArrayList<Integer> arr = [1, 2, 3, 4, 5];
+			arr.clear();		//[]
+
+	- ตัวแปร.contains(value) เพื่อเช็คว่าค่านั้นมีในสมาชิกของ ArrayList ไหม
+		Ex.	ArrayList<Integer> arr = [1, 2, 3, 4, 5];
+			arr.contains(3)		//true (เพราะ 3 เป็นสมาชิกของ arr)
+			

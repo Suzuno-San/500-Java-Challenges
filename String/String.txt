@@ -1,0 +1,26 @@
+DataStructure <String>
+	- ตัวแปร.charAt(index) เพื่อดู index ของ String return ค่าเป็น Character
+		Ex.	String str = "Expert";
+			str.charAt(0); 		//E (index ที่ 0 ของ str คือ E)
+
+	- ตัวแปร.lenght() เพื่อดูจำนวน index ของ String return ค่าเป็น Integer
+		Ex.	String str = "Expert";
+			str.length(); 		//6
+
+	- ตัวแปร.subtring(index,index) เพื่อดู index ของ String ตั้งแต่ n ถึง n-1 return ค่าเป็น String
+		Ex.	String str = "Expert";
+			str.substring(0,3); 		//Exp (ตั้งแต่ 0(E) ถึง 3-1(p))
+
+	- ตัวแปร.contains(String) เพื่อตรวจสอบว่ามี String นั่นมีในตัวแปรหรือไม่ return ค่าเป็น Boolean 
+		Ex.	String str = "Expert";
+			str.contains("x"); 		//true (เพราะ x มีอยู่ใน str)
+
+	- ตัวแปร.replace(oldString,newString) เพื่อแปลงจาก Stringเก่า เป็น Stringใหม่
+		Ex.	String str = "Expert";
+			str.replace("e","E"); 		//ExpErt (เปลี่ยน e ทั้งหมดแล้วเปลี่ยนเป็น E)
+
+	- type.toString(ตัวแปร) เพื่อแปลงเป็น String
+		Ex1.	char chr = 'E'; //'E' ที่เป็น Character
+			Character.toString(chr); 		//"E" (เปลี่ยน Character เป็น String)
+		Ex2. String str = "Expert";
+			Arrays.toString(str); 		//[Expert] (เปลี่ยน Array เป็น String)

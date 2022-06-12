@@ -1,4 +1,6 @@
 DataStructure <ArrayList>
+	ArrayList<Type> ตัวแปร = new ArrayList<Type>();
+
 	- Arrays.asList(...) เพื่อ convert ค่าของ array ไปเป็น List
 		Ex.	ArrayList<Integer> arr = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5)		
 			//[1, 2, 3 , 4, 5] 

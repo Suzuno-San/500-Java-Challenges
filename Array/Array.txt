@@ -1,11 +1,15 @@
 DataStructure <Array>
-	Arrays.toString(ตัวแปร) เพื่อพิมพ์Arrayออกมาทั้งหมดโดยไม่ต้องLoop
+	Type[] ตัวแปร = {value};
+
+	- Arrays.toString(ตัวแปร) เพื่อพิมพ์Arrayออกมาทั้งหมดโดยไม่ต้องLoop
 		Ex.	String[] array1 = {"America","Brazil","China","Domimmican","Egypt"};
 		Arrays.toString(array1);		//[America, Brazil, China, Domimmican, Egypt]
-	ตัวแปร[index] เพื่อดูสมาชิกในindexนั้นๆ
+	
+	- ตัวแปร[index] เพื่อดูสมาชิกในindexนั้นๆ
 		Ex.	String[] array1 = {"America","Brazil","China","Domimmican","Egypt"};
 		(array1[1]);	//Brazil
 		หรือ (array1[array.length-4];		//Brazil
-	ตัวแปร.length เพื่อดูจำนวนสมาชิกทั้งหมดใน Array
+
+	- ตัวแปร.length เพื่อดูจำนวนสมาชิกทั้งหมดใน Array
 		Ex.	String[] array1 = {"America","Brazil","China","Domimmican","Egypt"};
 		array1.length		//5

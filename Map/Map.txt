@@ -1,0 +1,43 @@
+DataStructure <Map>
+	HashMap<Type,Type> ตัวแปร = new HashMap<Type,Type>();
+	
+	- ตัวแปร.put เพื่อเพิ่ม value ลงใน Map
+		Ex.	HashMap<String,String> map1 = new HashMap<String,String>();
+			map1.put("first_name"="John");		//{"first_name"="John"}
+	
+	- ตัวแปร.get เพื่อดึง value ของ key ที่ต้องการ
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.get("first_name");	//John
+
+	- ตัวแปร.keySet() แปลง list ของ key ทั้งหมดใน ตัวแปร
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.keySet()	//[first_name,last_name]
+
+
+	- ตัวแปร.value() แปลง list ของ value ทั้งหมดใน ตัวแปร
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.value()	//[Doe,John]
+
+	- ตัวแปร.replace(key,oldvalue,newvalue) เพื่อเปลี่ยน value ของ key นั้นๆ
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.replace("first_name","John","Jane");	//{first_name=Jane, last_name=Doe}
+
+	- ตัวแปร.remove(key) เพื่อลบ key นั่นออกจาก map
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.remove("first_name")		//{last_name=Doe}
+
+	- ตัวแปร.clear() เพื่อลบข้อมูลทั้งหมดใน map
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.clear()		//{}
+
+	- ตัวแปร.size() เพื่อดูจำนวน key ของ map
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.size()		//2
+
+	- ตัวแปร.containsKey(ค่าใดๆ) เพื่อเช็คว่าค่าใดๆ เป็นหนึ่งใน key ของ map หรือไม่
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.containsKey("first_name");	//true
+
+	- ตัวแปร.containsKey(ค่าใดๆ) เพื่อเช็คว่าค่าใดๆ เป็นหนึ่งใน key ของ map หรือไม่
+		Ex.	map1 = {"first_name"="John","last_name"="Doe"};
+			map1.containsValue("John");	//true

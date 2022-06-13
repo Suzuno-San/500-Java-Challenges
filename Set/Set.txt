@@ -1,0 +1,42 @@
+DataStructure <Set>
+	HashSet<Type> ตัวแปร = new HashSet<Type>();
+
+	- Arrays.asList(...)  เพื่อ convert ค่าของ array ไปเป็น List
+		Ex.	HashSet<Integer> set1 = new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
+			//[1,2,3,4,5]
+	
+	- ตัวแปร.add(...) เพื่อเพิ่มค่าลงใน Set
+		Ex.	HashSet<Integer> set1 = new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
+			set1.add(6);		//[1,2,3,4,5,6]
+		Ex.	HashSet<Integer> set1 = new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
+			set1.add(1);		//[1,2,3,4,5]
+
+	- ตัวแปร.remove(...) เพื่อลบค่าใน Set
+		Ex.	HashSet<Integer> set1 = new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
+			set1.remove(1);	//[2,3,4,5]
+
+	- ตัวแปร.size() เพื่อดูขนาดของ Set
+		Ex.	HashSet<Integer> set1 = new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
+			set1.size();		//5
+
+	- ตัวแปร.contains(...) เพื่อตรวจสอบว่าค่านั้นอยู่ใน Set หรือไม่
+		Ex.	HashSet<Integer> set1 = new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
+			set1.contains(3);		//true
+			set1.contains(7);		//false
+	
+	-ตัวแปร1.addAll(ตัวแปร2) เพื่อให้ ตัวแปร1 Union กับ ตัวแปร2
+		Ex.	HashSet<Integer> set1 = [1,2,3,4,5]
+			HashSet<Integer> set2 = [4,5,6]
+			set1.addAll(set2)		//[1,2,3,4,5,6]
+
+	-ตัวแปร1.addAll(ตัวแปร2) เพื่อให้ ตัวแปร1 intersection กับ ตัวแปร2
+		Ex.	HashSet<Integer> set1 = [1,2,3,4,5]
+			HashSet<Integer> set2 = [4,5,6]
+			set1.addAll(set2)		//[4,5]
+
+	-ตัวแปร1.removeAll(ตัวแปร2) เพื่อให้ ตัวแปร1 ลบกับ ตัวแปร2
+		Ex.	HashSet<Integer> set1 = [1,2,3,4,5]
+			HashSet<Integer> set2 = [4,5,6]
+			set1.removeAll(set2)		//[1,2,3]
+
+

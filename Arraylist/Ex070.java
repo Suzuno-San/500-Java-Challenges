@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//กำหนดให้ array1 = [1,2,3,4,5] เขียนโปรแกรมรับอินพุต 1 ตัวที่เป็นจำนวนเต็ม ให้ทำการตรวจสอบว่า numeric1 เป็นสมาชิกใน array1 หรือไม่ จากนั้นพิมพ์ค่าออกมา
 public class Ex070 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
